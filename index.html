@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragathi Tutorials - Your Path to Success</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #0044cc, #0073e6);
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c43d22;
+            transform: scale(1.05);
+        }
+
+        section {
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #003399;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #e9f1ff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li::before {
+            content: '✔';
+            color: #0073e6;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+
+        .special-classes img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .features,
+        .testimonials {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonials h3 {
+            color: #ff5733;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #0044cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0044cc;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        /* Animation for Scroll */
+        .animate-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .animate-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pragathi Tutorials & B-Good Will Computer Educational Institutions</h1>
+            <p>Your Path to Success</p>
+            <button class="cta-button" onclick="showFreeClass()">Enroll for a Free Class Now!</button>
+        </header>
+
+        <section class="special-classes">
+            <h2>Special Classes Offered</h2>
+            <ul>
+                <li>Navodaya, NMMS Coaching</li>
+                <li>Maths and Science Mastery</li>
+                <li>Grammar and Commerce Excellence</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Special Coaching">
+        </section>
+
+        <section class="features">
+            <h2>Our Key Features</h2>
+            <ul>
+                <li>Guaranteed Results with Personalized Coaching</li>
+                <li>Weekly Exams for Progress Tracking</li>
+                <li>Flexible Batch Timings to Suit Your Schedule</li>
+                <li>School Assignment Support</li>
+                <li>Interactive Learning with Multimedia and Games</li>
+                <li>Highly Experienced and Trained Faculties</li>
+                <li>Concept Clearing Sessions and Practice Materials</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-item">
+                <h3>Jeevan</h3>
+                <p>"Pragathi Tutorials helped me excel in my board exams with their personalized attention and regular assessments. The teachers are very supportive!"</p>
+            </div>
+            <div class="testimonial-item">
+                <h3>Sandhya</h3>
+                <p>"The flexible batch timings allowed me to manage my school and coaching perfectly. Highly recommend for students aiming for Navodaya or NMMS."</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: <a href="tel:+9493820553">M.Balu:9493820553,Y.Arunteja:9390755575,G.Upendra:8688178553</a></p>
+            <p>Email: <a href="mailto:aruntejayerramanchi@gmail.com">aruntejayerramanchi@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Pragathi Tutorials. Achieve Your Best Results with Us!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Show alert for Free Class
+        function showFreeClass() {
+            alert("Free Class: Mathematics Basics/Advanced & Spoken English Classes!\nContact us to enroll.");
+        }
+
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-visible');
+                } else {
+                    entry.target.classList.remove('animate-visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('animate-up');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
